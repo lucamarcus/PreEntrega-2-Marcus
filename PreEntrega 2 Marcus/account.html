@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeguides</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="started.html">Cómo empezar</a>
+            <a href="account.html">Ingresar</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <form action="/submit" method="post">
+        <div class="registration">
+            <h3><b>CREA TU CUENTA</b></h3>
+            <hr>
+
+            <label for="username"><b>Nombre de Usuario</b></label>
+            <input type="text" placeholder="Ingresa tu nombre de usuario" name="username" id="username"> 
+
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingresa tu Contraseña" name="psw" id="psw">
+            
+            <label for="psw-repeat"><b>Repite tu contraseña</b></label>
+            <input type="password" placeholder="Vuelve a ingresar tu contraseña" name="psw-repeat" id="psw-repeat">
+
+            <label for="email"><b>Dirección de correo electrónico</b></label>
+            <input type="text" placeholder="Ingresa tu dirreción de correo electrónico" name="email" id="email">
+            <hr>
+
+            <button type="submit" class="registerbtn">Registrarse</button>
+
+        </div>
+
+        <div class="container-signin">
+            <p>Ya tienes una cuenta? <a href="#">Ingresa</a>.</p>
+          </div>
+    </form>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myNavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+
+</body>
+</html>
