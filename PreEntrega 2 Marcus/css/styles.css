@@ -252,3 +252,44 @@ footer {
      color: rgb(255, 105, 105);
     }
     
+    .sidebar {
+      grid-area: sidebar;
+    }
+  
+    .content {
+      grid-area: content;
+      text-align: center;
+    }
+  
+    .header {
+      grid-area: header;
+      text-align: center;
+    }
+
+
+    .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 300px 500px 500px;
+      grid-template-areas:
+      "header header header"
+      "sidebar content content";
+      color: #444;
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 150%;
+    }
+
+    .header,
+    .footer {
+      background-color: #999;
+    }
